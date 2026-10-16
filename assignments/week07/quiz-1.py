@@ -6,6 +6,10 @@
 """
 
 class Rectangle:
+<<<<<<< HEAD
+=======
+
+>>>>>>> upstream/main
     def __init__(self, length, width):
         self.length = length
         self.width = width
@@ -18,7 +22,39 @@ class Rectangle:
     def get_perimeter(self):
         return 2 * (self.length + self.width)
 
+<<<<<<< HEAD
 
 rect = Rectangle(10, 5)
 print(rect.get_area())       # Should print 50
 print(rect.get_perimeter())  # Should print 30
+=======
+rect = Rectangle(10, 5)
+print(rect.get_area())       # Should print 50
+print(rect.get_perimeter())  # Should print 30
+
+
+
+"""
+สร้างคลาส Circle ที่ประยุกต์ใช้คลาส Rectangle
+ในการคำนวณ พท. และเส้นรอบรูปได้
+"""
+
+class Circle:
+
+    # circle ต้องใช้ข้อมูลอะไรบ้าง เพื่อคำนวณ พท. และเส้นรอบรูป
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    # Method to get the area สูตรเดิมได้ไหม?
+    def get_area(self):
+        return self.length * self.width
+
+    # Method to get the perimeter สูตรเดิมได้มั้ย?
+    def get_perimeter(self):
+        return 2 * (self.length + self.width)
+    
+myCircle = Circle(....)
+print(myCircle.get_area())
+print(myCircle.get_perimeter())
+>>>>>>> upstream/main
